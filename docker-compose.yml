@@ -1,0 +1,14 @@
+services:
+  enfoque_tradicional:
+    build: ./enfoque_tradicional
+    volumes:
+      - ./data:/data
+    mem_limit: 2g
+    cpus: 2
+
+  enfoque_moderno:
+    build: ./enfoque_moderno
+    volumes:
+      - ./data:/data
+    mem_limit: 2g
+    cpus: 2
