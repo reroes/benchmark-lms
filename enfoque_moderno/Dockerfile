@@ -4,6 +4,6 @@ WORKDIR /app
 
 RUN pip install polars psutil
 
-COPY filtrar_tardios.py .
+COPY *.py .
 
 CMD ["python", "filtrar_tardios.py"]
